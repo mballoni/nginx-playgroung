@@ -1,0 +1,14 @@
+version: '3'
+services:
+  Web:
+    image: nginx:1.15.9-alpine
+    container_name: nginx
+    hostname: web
+    ports:
+    - 80:80
+    volumes:
+    - ./content:/var/www/html
+    - ./conf.d:/etc/nginx/conf.d
+    extra_hosts:
+       - "service:127.0.0.1"
+
