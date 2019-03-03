@@ -9,6 +9,7 @@ services:
     volumes:
     - ./content:/var/www/html
     - ./conf.d:/etc/nginx/conf.d
+    - ./conf.d/.htpasswd:/etc/nginx/.htpasswd
     extra_hosts:
        - "service:127.0.0.1"
 
