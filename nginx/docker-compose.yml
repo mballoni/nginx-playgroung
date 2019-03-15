@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 services:
   Web:
     image: nginx:1.15.9-alpine
